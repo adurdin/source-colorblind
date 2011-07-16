@@ -1,0 +1,265 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "5004"
+	"mapversion" "1315"
+	"formatversion" "100"
+	"prefab" "1"
+}
+world
+{
+	"id" "581543"
+	"mapversion" "1315"
+	"classname" "worldspawn"
+	"skyname" "sky_day01_01"
+	"maxpropscreenwidth" "-1"
+	"detailvbsp" ""
+	"detailmaterial" ""
+}
+entity
+{
+	"id" "581544"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "255 255 255"
+	"color2" "255 255 255"
+	"effect" "0"
+	"fadein" "0.3"
+	"fadeout" "1.5"
+	"fxtime" "0.25"
+	"holdtime" "1.2"
+	"message" "Tritanopia (Very rare)"
+	"spawnflags" "0"
+	"targetname" "text_tritanopia"
+	"x" "-1"
+	"y" "-1"
+	"origin" "600 864 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "581546"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "tritanopia.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"StartDisabled" "1"
+	"targetname" "cc_tritanopia"
+	"origin" "600 840 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "581550"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "deuteranopia.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"StartDisabled" "1"
+	"targetname" "cc_deuteranopia"
+	"origin" "568 840 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "581554"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "255 255 255"
+	"color2" "255 255 255"
+	"effect" "0"
+	"fadein" "0.3"
+	"fadeout" "1.5"
+	"fxtime" "0.25"
+	"holdtime" "1.2"
+	"message" "Deuteranopia (Common)"
+	"spawnflags" "0"
+	"targetname" "text_deutertanopia"
+	"x" "-1"
+	"y" "-1"
+	"origin" "568 864 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "581556"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "255 255 255"
+	"color2" "255 255 255"
+	"effect" "0"
+	"fadein" "0.3"
+	"fadeout" "1.5"
+	"fxtime" "0.25"
+	"holdtime" "1.2"
+	"message" "Protanopia (Rare)"
+	"spawnflags" "0"
+	"targetname" "text_protanopia"
+	"x" "-1"
+	"y" "-1"
+	"origin" "536 864 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "581557"
+	"classname" "game_text"
+	"channel" "1"
+	"color" "255 255 255"
+	"color2" "255 255 255"
+	"effect" "0"
+	"fadein" "0.3"
+	"fadeout" "1.5"
+	"fxtime" "0.25"
+	"holdtime" "1.2"
+	"message" "Normal"
+	"spawnflags" "0"
+	"targetname" "text_normal"
+	"x" "-1"
+	"y" "-1"
+	"origin" "536 864 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "581558"
+	"classname" "color_correction"
+	"fadeInDuration" "0.0"
+	"fadeOutDuration" "0.0"
+	"filename" "protanopia.raw"
+	"maxfalloff" "-1"
+	"maxweight" "1.0"
+	"minfalloff" "-1"
+	"StartDisabled" "1"
+	"targetname" "cc_protanopia"
+	"origin" "536 840 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "581562"
+	"classname" "math_counter"
+	"max" "4"
+	"min" "0"
+	"StartDisabled" "0"
+	"startvalue" "0"
+	"targetname" "counter_colorblind"
+	connections
+	{
+		"OnHitMax" "counter_colorblind,SetValue,0,0,-1"
+		"OutValue" "case_colorblind,InValue,,0,-1"
+	}
+	"origin" "552 808 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1000]"
+	}
+}
+entity
+{
+	"id" "581564"
+	"classname" "logic_case"
+	"Case01" "0"
+	"Case02" "1"
+	"Case03" "2"
+	"Case04" "3"
+	"targetname" "case_colorblind"
+	connections
+	{
+		"OnCase01" "cc_protanopia,Disable,,0,-1"
+		"OnCase01" "cc_deuteranopia,Disable,,0,-1"
+		"OnCase01" "cc_tritanopia,Disable,,0,-1"
+		"OnCase02" "cc_tritanopia,Disable,,0,-1"
+		"OnCase02" "cc_deuteranopia,Disable,,0,-1"
+		"OnCase02" "cc_protanopia,Enable,,0,-1"
+		"OnCase03" "cc_tritanopia,Disable,,0,-1"
+		"OnCase03" "cc_deuteranopia,Enable,,0,-1"
+		"OnCase03" "cc_protanopia,Disable,,0,-1"
+		"OnCase04" "cc_tritanopia,Enable,,0,-1"
+		"OnCase04" "cc_deuteranopia,Disable,,0,-1"
+		"OnCase04" "cc_protanopia,Disable,,0,-1"
+		"OnCase01" "text_normal,Display,,0,-1"
+		"OnCase02" "text_protanopia,Display,,0,-1"
+		"OnCase03" "text_deutertanopia,Display,,0,-1"
+		"OnCase04" "text_tritanopia,Display,,0,-1"
+	}
+	"origin" "584 808 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "581566"
+	"classname" "logic_relay"
+	"spawnflags" "0"
+	"StartDisabled" "0"
+	"targetname" "relay_colorblind"
+	connections
+	{
+		"OnTrigger" "counter_colorblind,Add,1,0,-1"
+	}
+	"origin" "568 776 -400"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 1500]"
+	}
+}
