@@ -2,19 +2,27 @@ versioninfo
 {
 	"editorversion" "400"
 	"editorbuild" "5004"
-	"mapversion" "1315"
+	"mapversion" "1316"
 	"formatversion" "100"
 	"prefab" "1"
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "16"
+	"bShow3DGrid" "0"
 }
 world
 {
 	"id" "581543"
-	"mapversion" "1315"
+	"mapversion" "1316"
 	"classname" "worldspawn"
-	"skyname" "sky_day01_01"
-	"maxpropscreenwidth" "-1"
-	"detailvbsp" ""
 	"detailmaterial" ""
+	"detailvbsp" ""
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_day01_01"
 }
 entity
 {
@@ -33,7 +41,7 @@ entity
 	"targetname" "text_tritanopia"
 	"x" "-1"
 	"y" "-1"
-	"origin" "600 864 -400"
+	"origin" "32 88 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -54,7 +62,7 @@ entity
 	"minfalloff" "-1"
 	"StartDisabled" "1"
 	"targetname" "cc_tritanopia"
-	"origin" "600 840 -400"
+	"origin" "32 64 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -75,7 +83,7 @@ entity
 	"minfalloff" "-1"
 	"StartDisabled" "1"
 	"targetname" "cc_deuteranopia"
-	"origin" "568 840 -400"
+	"origin" "0 64 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -101,7 +109,7 @@ entity
 	"targetname" "text_deutertanopia"
 	"x" "-1"
 	"y" "-1"
-	"origin" "568 864 -400"
+	"origin" "0 88 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -127,7 +135,7 @@ entity
 	"targetname" "text_protanopia"
 	"x" "-1"
 	"y" "-1"
-	"origin" "536 864 -400"
+	"origin" "-32 88 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -153,7 +161,7 @@ entity
 	"targetname" "text_normal"
 	"x" "-1"
 	"y" "-1"
-	"origin" "536 864 -400"
+	"origin" "-32 88 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -174,7 +182,7 @@ entity
 	"minfalloff" "-1"
 	"StartDisabled" "1"
 	"targetname" "cc_protanopia"
-	"origin" "536 840 -400"
+	"origin" "-32 64 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -197,7 +205,7 @@ entity
 		"OnHitMax" "counter_colorblind,SetValue,0,0,-1"
 		"OutValue" "case_colorblind,InValue,,0,-1"
 	}
-	"origin" "552 808 -400"
+	"origin" "-16 32 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -234,7 +242,7 @@ entity
 		"OnCase03" "text_deutertanopia,Display,,0,-1"
 		"OnCase04" "text_tritanopia,Display,,0,-1"
 	}
-	"origin" "584 808 -400"
+	"origin" "16 32 0"
 	editor
 	{
 		"color" "220 30 220"
@@ -254,7 +262,7 @@ entity
 	{
 		"OnTrigger" "counter_colorblind,Add,1,0,-1"
 	}
-	"origin" "568 776 -400"
+	"origin" "0 0 0"
 	editor
 	{
 		"color" "220 30 220"
