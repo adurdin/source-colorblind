@@ -66,6 +66,19 @@ builds of your map.
 filters.
 
 
+## Using the Python script to convert other color tables
+
+The Python script `colortable.py` allows you to convert a color table to a `.tga` image like this:
+
+    python colortable.py my-color-table.raw my-color-table.tga
+
+Or to convert such a `.tga` image back to a color table like this:
+
+    python colortable.py another-color-table.tga another-color-table.raw
+
+You must have Python 2.6 or greater installed, and run these commands from the shell or terminal.
+
+
 ## Copyright licence
 
 Copyright (C) 2011 by Andrew Durdin
